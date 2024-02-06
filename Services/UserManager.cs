@@ -22,6 +22,11 @@ public class UserManager
     {
         return users.Any(u => u.UserName == user.UserName && u.Password == user.Password);
     }
-}
+
+    public IEnumerable<UserModel> GetAllUsers()
+        {
+            return users;
+        }
+    }
 
 }

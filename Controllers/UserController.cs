@@ -19,4 +19,10 @@ public class UserController : Controller
             return BadRequest("Invalid credentials");
         }
     }
+    [HttpGet("AllUsers")]
+    public ActionResult<IEnumerable<UserModel>> GetAllUsers()
+    {
+        var allUsers = _userManager.GetAllUsers();
+        return Ok(allUsers);
+    }
 }
