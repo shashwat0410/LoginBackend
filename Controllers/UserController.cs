@@ -1,17 +1,4 @@
-﻿/*using Microsoft.AspNetCore.Mvc;
-
-namespace LoginBackend.Controllers
-{
-    public class UserController : Controller
-    {
-        public IActionResult Index()
-        {
-            return View();
-        }
-    }
-}
-*/
-using LoginBackend.Models;
+﻿using LoginBackend.Models;
 using LoginBackend.Services;
 using Microsoft.AspNetCore.Mvc;
 
